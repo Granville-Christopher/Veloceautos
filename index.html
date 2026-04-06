@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veloce Motors | Elite Automotive Experience</title>
+    <meta name="description" content="Experience the pinnacle of automotive engineering at Veloce Motors. Discover our curated collection of luxury and performance vehicles.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body class="bg-showroom-950 text-chrome-bright font-sans overflow-x-hidden">
+    <!-- Background Grid -->
+    <div class="fixed inset-0 bg-grid-fade bg-grid -z-10 opacity-40"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 px-6 py-4 flex justify-between items-center bg-showroom-950/80 backdrop-blur-md border-b border-white/5 transition-all duration-300">
+        <div class="flex items-center gap-2">
+            <span class="font-display text-2xl font-bold tracking-tighter text-gradient uppercase">Veloce</span>
+        </div>
+        <div class="hidden md:flex gap-8 text-sm font-medium tracking-wide uppercase">
+            <a href="#inventory" class="hover:text-accent transition-colors">Inventory</a>
+            <a href="#financing" class="hover:text-accent transition-colors">Financing</a>
+            <a href="#heritage" class="hover:text-accent transition-colors">Heritage</a>
+            <a href="#book-viewing" class="hover:text-accent transition-colors">Book</a>
+        </div>
+        <a href="#book-viewing" class="px-6 py-2 bg-accent hover:bg-accent-glow text-white text-xs font-bold uppercase tracking-widest transition-all rounded-sm border-glow">
+            Book Viewing
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex flex-col justify-center items-center px-6 pt-20 overflow-hidden">
+        <!-- Hero Background Image -->
+        <div class="absolute inset-0 -z-20">
+            <img src="/hero_bg.png" 
+                 alt="Hero Supercar" 
+                 class="w-full h-full object-cover scale-105">
+            <div class="absolute inset-0 bg-gradient-to-b from-showroom-950/20 via-showroom-950/60 to-showroom-950"></div>
+        </div>
+
+        <div class="max-w-6xl w-full text-center relative z-10">
+            <h1 class="font-display text-6xl md:text-8xl lg:text-9xl font-extrabold uppercase leading-[0.9] tracking-tighter mb-8 opacity-0 reveal-text">
+                Defining <br> <span class="text-gradient">Fast</span>
+            </h1>
+            <p class="max-w-2xl mx-auto text-chrome/80 text-lg md:text-xl font-light mb-12 opacity-0 reveal-subtext">
+                The ultimate destination for those who seek more than just a drive. Veloce Motors brings you the most exclusive performance vehicles in the world.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center opacity-0 reveal-btns">
+                <a href="/inventory.html" class="px-10 py-4 bg-white text-black font-bold uppercase tracking-widest text-sm hover:bg-chrome transition-all rounded-sm">
+                    Explore Inventory
+                </a>
+                <a href="#heritage" class="px-10 py-4 border border-white/10 hover:border-white/30 transition-all font-bold uppercase tracking-widest text-sm rounded-sm">
+                    Our Philosophy
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-float-soft">
+            <div class="w-[1px] h-12 bg-gradient-to-b from-accent to-transparent"></div>
+        </div>
+    </section>
+
+    <!-- Trust Section (Social Proof) -->
+    <section class="py-12 border-y border-white/5 bg-showroom-900/30">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
+                <span class="font-display text-xl font-black italic tracking-widest uppercase">PORSCHE</span>
+                <span class="font-display text-xl font-black italic tracking-widest uppercase">FERRARI</span>
+                <span class="font-display text-xl font-black italic tracking-widest uppercase">LAMBORGHINI</span>
+                <span class="font-display text-xl font-black italic tracking-widest uppercase">MCLAREN</span>
+                <span class="font-display text-xl font-black italic tracking-widest uppercase text-xs md:text-xl">MERCEDES-BENZ</span>
+                <span class="font-display text-xl font-black italic tracking-widest uppercase">BMW</span>
+                <span class="font-display text-xl font-black italic tracking-widest uppercase">BUGATTI</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Inventory -->
+    <section id="inventory" class="py-24 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between items-end mb-16 px-4">
+                <div>
+                    <span class="text-accent text-xs font-bold uppercase tracking-[0.3em] block mb-2">Exclusive</span>
+                    <h2 class="font-display text-4xl md:text-5xl font-bold uppercase">Featured Fleet</h2>
+                </div>
+                <a href="/inventory.html" class="text-xs font-bold uppercase tracking-widest border-b border-white/20 pb-1 hover:border-accent transition-all">View All</a>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Vehicle Card 1 (Mercedes) -->
+                <div class="group relative bg-showroom-900 border border-white/5 rounded-sm overflow-hidden hover:border-accent/30 transition-all vehicle-card shadow-card hover:shadow-lift" data-car="mercedes-gt">
+                    <div class="aspect-[16/10] bg-showroom-800 overflow-hidden">
+                         <div class="w-full h-full relative">
+                             <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&q=80&w=800" alt="Mercedes GT" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                             <div class="absolute inset-0 bg-gradient-to-t from-showroom-900/80 to-transparent"></div>
+                         </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="font-display text-xl font-bold uppercase tracking-wide">Silver Star GT</h3>
+                                <p class="text-xs text-chrome/40 uppercase tracking-widest">2024 AMG Edition</p>
+                            </div>
+                            <span class="text-accent font-bold">$175,000</span>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 py-4 border-y border-white/5 mb-6 text-[10px] font-bold uppercase text-chrome/50">
+                            <div class="text-center">577 HP</div>
+                            <div class="text-center border-x border-white/5">3.1s 0-60</div>
+                            <div class="text-center">V8 BITURBO</div>
+                        </div>
+                        <button class="view-details-btn w-full py-3 border border-white/10 group-hover:bg-white group-hover:text-black transition-all font-bold uppercase tracking-widest text-[10px]">
+                            Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Vehicle Card 2 (BMW) -->
+                <div class="group relative bg-showroom-900 border border-white/5 rounded-sm overflow-hidden hover:border-accent/30 transition-all vehicle-card shadow-card hover:shadow-lift" data-car="bmw-m8">
+                    <div class="aspect-[16/10] bg-showroom-800 overflow-hidden">
+                         <div class="w-full h-full relative">
+                             <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&q=80&w=800" alt="BMW M8" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                             <div class="absolute inset-0 bg-gradient-to-t from-showroom-900/80 to-transparent"></div>
+                         </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="font-display text-xl font-bold uppercase tracking-wide">Bavarian Beast</h3>
+                                <p class="text-xs text-chrome/40 uppercase tracking-widest">2024 M Competition</p>
+                            </div>
+                            <span class="text-accent font-bold">$162,000</span>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 py-4 border-y border-white/5 mb-6 text-[10px] font-bold uppercase text-chrome/50">
+                            <div class="text-center">617 HP</div>
+                            <div class="text-center border-x border-white/5">3.0s 0-60</div>
+                            <div class="text-center">V8 TWINPOWER</div>
+                        </div>
+                        <button class="view-details-btn w-full py-3 border border-white/10 group-hover:bg-white group-hover:text-black transition-all font-bold uppercase tracking-widest text-[10px]">
+                            Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Vehicle Card 3 (Apex) -->
+                <div class="group relative bg-showroom-900 border border-white/5 rounded-sm overflow-hidden hover:border-accent/30 transition-all vehicle-card shadow-card hover:shadow-lift" data-car="apex-predator">
+                    <div class="aspect-[16/10] bg-showroom-800 overflow-hidden">
+                         <div class="w-full h-full relative">
+                             <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&q=80&w=800" alt="Supercar" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                             <div class="absolute inset-0 bg-gradient-to-t from-showroom-900/80 to-transparent"></div>
+                         </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="font-display text-xl font-bold uppercase tracking-wide">Apex Predator</h3>
+                                <p class="text-xs text-chrome/40 uppercase tracking-widest">2024 V-Series</p>
+                            </div>
+                            <span class="text-accent font-bold">$245,000</span>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 py-4 border-y border-white/5 mb-6 text-[10px] font-bold uppercase text-chrome/50">
+                            <div class="text-center">720 HP</div>
+                            <div class="text-center border-x border-white/5">2.8s 0-60</div>
+                            <div class="text-center">V8 BI-TURBO</div>
+                        </div>
+                        <button class="view-details-btn w-full py-3 border border-white/10 group-hover:bg-white group-hover:text-black transition-all font-bold uppercase tracking-widest text-[10px]">
+                            Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financing & Efficiency Section -->
+    <section id="financing" class="py-24 px-6 bg-showroom-900/20 border-y border-white/5">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <span class="text-accent text-xs font-bold uppercase tracking-[0.3em] block mb-4">Flexible Ownership</span>
+                <h2 class="font-display text-4xl md:text-6xl font-bold uppercase mb-8 leading-tight">Elevate Your <br> <span class="text-gradient">Experience</span></h2>
+                <p class="text-chrome/60 text-lg font-light mb-12">We offer bespoke financial solutions tailored to your lifestyle. Owning the extraordinary has never been more seamless.</p>
+                <div class="grid sm:grid-cols-2 gap-8">
+                    <div class="p-8 bg-showroom-900 border border-white/5 rounded-sm">
+                        <span class="block font-display text-4xl font-bold text-accent mb-2">10%</span>
+                        <p class="text-xs uppercase font-bold tracking-widest text-chrome/50">Starting Down Payment</p>
+                    </div>
+                    <div class="p-8 bg-showroom-900 border border-white/5 rounded-sm">
+                        <span class="block font-display text-4xl font-bold text-accent mb-2">24h</span>
+                        <p class="text-xs uppercase font-bold tracking-widest text-chrome/50">Instant Approval</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-showroom-900 p-10 border border-white/5 rounded-sm shadow-lift relative overflow-hidden">
+                <div class="absolute -top-20 -right-20 w-64 h-64 bg-accent/10 blur-[100px] rounded-full"></div>
+                <h3 class="font-display text-2xl font-bold uppercase mb-8 tracking-wide">Efficiency Metrics</h3>
+                <div class="space-y-8 relative z-10">
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-[10px] uppercase font-bold tracking-widest text-chrome/60">Hybrid Efficiency</span>
+                            <span class="text-[10px] font-bold text-accent">94%</span>
+                        </div>
+                        <div class="w-full h-1 bg-showroom-800 rounded-full overflow-hidden">
+                            <div class="h-full bg-accent w-[94%]"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-[10px] uppercase font-bold tracking-widest text-chrome/60">Engine Performance</span>
+                            <span class="text-[10px] font-bold text-accent">98.5%</span>
+                        </div>
+                        <div class="w-full h-1 bg-showroom-800 rounded-full overflow-hidden">
+                            <div class="h-full bg-accent w-[98.5%]"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-[10px] uppercase font-bold tracking-widest text-chrome/60">Aerodynamic Drag</span>
+                            <span class="text-[10px] font-bold text-accent">0.21 Cd</span>
+                        </div>
+                        <div class="w-full h-1 bg-showroom-800 rounded-full overflow-hidden">
+                            <div class="h-full bg-accent w-[85%]"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Section -->
+    <section class="py-24 px-6 bg-showroom-950 relative min-h-[500px] flex items-center overflow-hidden">
+        <div class="absolute inset-0 -z-10 bg-showroom-950">
+            <img src="/performance.png" alt="Performance" class="w-full h-full object-cover opacity-30">
+            <div class="absolute inset-0 bg-gradient-to-r from-showroom-950 via-showroom-950/80 to-transparent"></div>
+        </div>
+        <div class="max-w-7xl mx-auto">
+            <div class="max-w-xl">
+                <span class="text-accent text-xs font-bold uppercase tracking-[0.3em] block mb-4">Engineering</span>
+                <h2 class="font-display text-5xl md:text-7xl font-bold uppercase mb-8 leading-tight">Mastering <br> <span class="text-gradient">Physics</span></h2>
+                <p class="text-chrome/70 text-lg font-light mb-12">Every vehicle in our collection is a masterpiece of precision engineering, designed to push the boundaries of what is possible.</p>
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <span class="block font-display text-3xl font-bold text-accent mb-1">0.1ms</span>
+                        <p class="text-[10px] uppercase font-bold tracking-widest text-chrome/40">Response Time</p>
+                    </div>
+                    <div>
+                        <span class="block font-display text-3xl font-bold text-accent mb-1">100%</span>
+                        <p class="text-[10px] uppercase font-bold tracking-widest text-chrome/40">Carbon Fiber</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Heritage Section -->
+    <section id="heritage" class="py-24 px-6 bg-showroom-900/50 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
+            <div class="lg:w-1/2">
+                <span class="text-accent text-xs font-bold uppercase tracking-[0.3em] block mb-4">Our Legacy</span>
+                <h2 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold uppercase mb-8 leading-tight">A Quarter Century of <br> <span class="text-gradient">Excellence</span></h2>
+                <p class="text-chrome/60 text-sm font-light mb-8 leading-relaxed">Founded in 1998, Veloce Motors has evolved from a boutique showroom to a global authority in hypercar curation.</p>
+                <div class="space-y-6">
+                    <div class="flex gap-6 items-start">
+                        <div class="w-12 h-12 flex-shrink-0 flex items-center justify-center bg-accent/20 border border-accent/30 rounded-sm">
+                            <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold uppercase mb-1">Tailored Concierge</h4>
+                            <p class="text-chrome/50 text-sm font-light">Worldwide delivery and personal maintenance managers for your fleet.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6 items-start">
+                        <div class="w-12 h-12 flex-shrink-0 flex items-center justify-center bg-accent/20 border border-accent/30 rounded-sm">
+                            <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold uppercase mb-1">Exclusive Warranties</h4>
+                            <p class="text-chrome/50 text-sm font-light">Industry-leading protection packages that cover you on the road and the track.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-1/2 relative">
+                <div class="aspect-video bg-showroom-800 rounded-sm overflow-hidden border-glow">
+                    <img src="/heritage.png" alt="Showroom Heritage" class="w-full h-full object-cover block">
+                    <div class="absolute inset-0 bg-gradient-to-t from-showroom-950/40 to-transparent"></div>
+                </div>
+                <div class="absolute -bottom-6 -right-6 p-10 bg-showroom-950 border border-white/10 hidden md:block">
+                    <p class="font-display text-4xl font-black italic">EST. 1998</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="book-viewing" class="py-24 px-6 bg-showroom-950 border-t border-white/5 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <span class="text-accent text-xs font-bold uppercase tracking-[0.3em] block mb-4">Reservation</span>
+            <h2 class="font-display text-4xl md:text-6xl font-bold uppercase mb-12">Experience the <span class="text-gradient">Extraordinary</span></h2>
+            <form id="booking-form" class="grid md:grid-cols-2 gap-6 text-left">
+                <div class="space-y-4">
+                    <label class="block text-[10px] uppercase font-bold tracking-widest text-chrome/60 ml-2">Full Name</label>
+                    <input type="text" placeholder="John Doe" required class="w-full bg-showroom-900/50 border border-white/10 p-4 rounded-sm focus:border-accent outline-none transition-all placeholder:text-chrome/20">
+                </div>
+                <div class="space-y-4">
+                    <label class="block text-[10px] uppercase font-bold tracking-widest text-chrome/60 ml-2">Email Address</label>
+                    <input type="email" placeholder="john@example.com" required class="w-full bg-showroom-900/50 border border-white/10 p-4 rounded-sm focus:border-accent outline-none transition-all placeholder:text-chrome/20">
+                </div>
+                <div class="md:col-span-2 space-y-4">
+                    <label class="block text-[10px] uppercase font-bold tracking-widest text-chrome/60 ml-2">Preferred Vehicle</label>
+                    <select required class="w-full bg-showroom-900/50 border border-white/10 p-4 rounded-sm focus:border-accent outline-none appearance-none transition-all text-chrome/40">
+                        <option value="" disabled selected>Select a vehicle</option>
+                        <option value="apex">Apex Predator</option>
+                        <option value="midnight">Midnight GT</option>
+                        <option value="silver">Silver Arrow</option>
+                        <option value="mercedes">Silver Star GT</option>
+                        <option value="bmw">Bavarian Beast</option>
+                    </select>
+                </div>
+                <div class="md:col-span-2 pt-6">
+                    <button type="submit" class="w-full py-5 bg-accent hover:bg-accent-glow text-white font-bold uppercase tracking-[0.2em] text-sm rounded-sm border-glow transition-all">
+                        Request Private Viewing
+                    </button>
+                </div>
+            </form>
+            <div id="form-success" class="hidden mt-8 p-6 bg-accent/10 border border-accent/30 text-accent font-bold uppercase tracking-widest text-xs rounded-sm">
+                Request received. Our concierge will contact you shortly.
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-showroom-950 border-t border-white/5 pt-24 pb-12 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-20">
+            <div class="md:col-span-2">
+                <span class="font-display text-3xl font-bold uppercase tracking-tighter text-gradient block mb-6">Veloce</span>
+                <p class="max-w-xs text-chrome/40 text-sm font-light">Curating the finest automotive engineering since 1998. Experience the next level of luxury and performance.</p>
+            </div>
+            <div>
+                <h5 class="font-bold uppercase text-xs tracking-widest mb-6">Navigation</h5>
+                <ul class="space-y-4 text-chrome/60 text-sm">
+                    <li><a href="/inventory.html" class="hover:text-accent transition-all">Inventory</a></li>
+                    <li><a href="#heritage" class="hover:text-accent transition-all">About Us</a></li>
+                    <li><a href="#" class="hover:text-accent transition-all">Careers</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-bold uppercase text-xs tracking-widest mb-6">Connect</h5>
+                <ul class="space-y-4 text-chrome/60 text-sm">
+                    <li><a href="#" class="hover:text-accent transition-all">Instagram</a></li>
+                    <li><a href="#" class="hover:text-accent transition-all">Twitter</a></li>
+                    <li><a href="#" class="hover:text-accent transition-all">Facebook</a></li>
+                    <li><a href="#" class="hover:text-accent transition-all">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto pt-12 border-t border-white/5 flex flex-col md:row justify-between items-center gap-6">
+            <p class="text-[10px] uppercase font-bold tracking-widest text-chrome/30">© 2024 Veloce Motors International. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Car Modal -->
+    <div id="car-modal" class="fixed inset-0 z-[100] flex items-center justify-center p-6 opacity-0 pointer-events-none transition-all duration-500">
+        <div class="absolute inset-0 bg-showroom-950/95 backdrop-blur-xl"></div>
+        <div class="relative w-full max-w-5xl bg-showroom-900 border border-white/10 rounded-sm shadow-2xl p-4 md:p-10 scale-95 transition-transform duration-500">
+            <button id="close-modal" class="absolute top-6 right-6 p-2 hover:text-accent transition-colors">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="aspect-video bg-showroom-800 rounded-sm overflow-hidden border border-white/5">
+                    <img id="modal-image" src="" alt="Car Image" class="w-full h-full object-cover">
+                </div>
+                <div>
+                    <span id="modal-badge" class="text-accent text-[10px] font-bold uppercase tracking-[0.3em] block mb-2"></span>
+                    <h2 id="modal-title" class="font-display text-4xl font-bold uppercase mb-4 tracking-wide"></h2>
+                    <p id="modal-price" class="text-2xl font-bold text-gradient mb-6"></p>
+                    <p id="modal-description" class="text-chrome/60 text-sm font-light mb-8 leading-relaxed"></p>
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div class="p-4 bg-showroom-950 border border-white/5 rounded-sm">
+                            <span id="modal-spec1-val" class="block font-bold text-chrome-bright"></span>
+                            <span class="text-[8px] uppercase tracking-widest text-chrome/40">Performance</span>
+                        </div>
+                        <div class="p-4 bg-showroom-950 border border-white/5 rounded-sm">
+                            <span id="modal-spec2-val" class="block font-bold text-chrome-bright"></span>
+                            <span class="text-[8px] uppercase tracking-widest text-chrome/40">Acceleration</span>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <button class="flex-1 py-4 bg-accent hover:bg-accent-glow text-white font-bold uppercase tracking-widest text-xs rounded-sm transition-all">Enquire Now</button>
+                        <button class="px-6 py-4 border border-white/10 hover:border-white/30 text-xs font-bold uppercase tracking-widest rounded-sm transition-all">Specs</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/src/main.js" type="module"></script>
+</body>
+</html>
