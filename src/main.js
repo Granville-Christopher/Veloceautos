@@ -193,4 +193,19 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         );
     });
+
+    // Scroll to Top Logic
+    const scrollToTopBtn = document.getElementById('scroll-to-top');
+    if (scrollToTopBtn) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                scrollToTopBtn.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-10');
+            } else {
+                scrollToTopBtn.classList.add('opacity-0', 'pointer-events-none', 'translate-y-10');
+            }
+        });
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
 });
