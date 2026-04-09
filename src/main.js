@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Toggle active state
             catBtns.forEach(b => {
                 b.classList.remove('bg-white', 'text-black', 'active-cat');
-                b.classList.add('border', 'border-white/10', 'text-chrome-bright');
+                b.classList.add('border', 'border-white/10');
             });
             btn.classList.add('bg-white', 'text-black', 'active-cat');
             btn.classList.remove('border', 'border-white/10');

@@ -31,18 +31,21 @@
         </a>
     </nav>
 
+    <!-- Forced spacer to clear fixed navigation (even more aggressive) -->
+    <!-- <div class="h-96 md:h-[30rem]"></div>  -->
+
     <!-- Header Section -->
-    <header class="pt-48 pb-12 px-6"> <!-- Increased padding to avoid header hide -->
+    <header class="pb-16 pt-20 px-6 relative z-10">
         <div class="max-w-7xl mx-auto">
             <span class="text-accent text-xs font-bold uppercase tracking-[0.3em] block mb-4">The Collection</span>
             <h1 class="font-display text-5xl md:text-7xl font-bold uppercase mb-12">Full <span class="text-gradient">Inventory</span></h1>
             
             <!-- Category Toggles with Spacing -->
-            <div class="flex flex-wrap gap-4 pb-12"> <!-- Added pb-12 for space before cars -->
-                <button class="cat-btn px-8 py-3 bg-white text-black text-[10px] font-bold uppercase tracking-widest rounded-full transition-all active-cat" data-category="all">All Vehicles</button>
-                <button class="cat-btn px-8 py-3 border border-white/10 hover:border-white/30 text-[10px] font-bold uppercase tracking-widest rounded-full transition-all" data-category="hypercars">Hypercars</button>
-                <button class="cat-btn px-8 py-3 border border-white/10 hover:border-white/30 text-[10px] font-bold uppercase tracking-widest rounded-full transition-all" data-category="luxury">Luxury Elite</button>
-                <button class="cat-btn px-8 py-3 border border-white/10 hover:border-white/30 text-[10px] font-bold uppercase tracking-widest rounded-full transition-all" data-category="performance">Performance</button>
+            <div class="flex flex-wrap gap-4 justify-start"> <!-- Added justify-center -->
+                <button class="cat-btn px-4 py-3 bg-white text-black text-[10px] font-bold uppercase tracking-widest rounded-sm transition-all active-cat" data-category="all">All Vehicles</button>
+                <button class="cat-btn px-4 py-3 border border-white/10 hover:border-white/30 text-[10px] font-bold uppercase tracking-widest rounded-sm transition-all" data-category="hypercars">Hypercars</button>
+                <button class="cat-btn px-4 py-3 border border-white/10 hover:border-white/30 text-[10px] font-bold uppercase tracking-widest rounded-sm transition-all" data-category="luxury">Luxury Elite</button>
+                <button class="cat-btn px-4 py-3 border border-white/10 hover:border-white/30 text-[10px] font-bold uppercase tracking-widest rounded-sm transition-all" data-category="performance">Performance</button>
             </div>
         </div>
     </header>
