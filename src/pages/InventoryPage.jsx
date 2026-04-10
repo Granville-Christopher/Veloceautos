@@ -36,7 +36,7 @@ export default function InventoryPage({ onOpenModal }) {
           <span className="text-accent text-xs font-bold uppercase tracking-[0.3em] block mb-4">
             The Collection
           </span>
-          <h1 className="font-display text-5xl md:text-7xl font-bold uppercase mb-12">
+          <h1 className="font-display text-[clamp(2rem,10vw,8rem)] md:text-7xl font-bold uppercase mb-12">
             Full <span className="text-gradient">Inventory</span>
           </h1>
 
