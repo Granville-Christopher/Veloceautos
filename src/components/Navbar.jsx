@@ -45,14 +45,14 @@ export default function Navbar() {
             <a href="#inventory" className="hover:text-accent transition-colors">Inventory</a>
             <a href="#financing" className="hover:text-accent transition-colors">Financing</a>
             <a href="#heritage" className="hover:text-accent transition-colors">Heritage</a>
-            <a href="#book-viewing" className="hover:text-accent transition-colors">Book</a>
+
           </>
         )}
       </div>
 
       <a
         href={isInventory ? '/#book-viewing' : '#book-viewing'}
-        className="px-6 py-2 bg-accent hover:bg-accent-glow text-white text-xs font-bold uppercase tracking-widest transition-all rounded-sm border-glow"
+        className="hidden md:inline-block px-6 py-2 bg-accent hover:bg-accent-glow text-white text-xs font-bold uppercase tracking-widest transition-all rounded-sm border-glow"
       >
         Book Viewing
       </a>
@@ -88,9 +88,15 @@ export default function Navbar() {
                 <a href="#inventory" className="hover:text-accent transition-colors">Inventory</a>
                 <a href="#financing" className="hover:text-accent transition-colors">Financing</a>
                 <a href="#heritage" className="hover:text-accent transition-colors">Heritage</a>
-                <a href="#book-viewing" className="hover:text-accent transition-colors">Book</a>
+
               </>
             )}
+            <a
+              href={isInventory ? '/#book-viewing' : '#book-viewing'}
+              className="bg-accent text-white px-6 py-3 rounded-sm text-center mt-2 font-bold"
+            >
+              Book Viewing
+            </a>
           </div>
         </div>
       )}
